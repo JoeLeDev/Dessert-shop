@@ -1,0 +1,120 @@
+@font-face {
+    font-family: "RedHatText";
+    src: url("/assets/fonts/static/RedHatText-Regular.ttf");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "RedHatText";
+    src: url("/assets/fonts/static/RedHatText-SemiBold.ttf");
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "RedHatText";
+    src: url("/assets/fonts/static/RedHatText-Bold.ttf");
+    font-weight: 700;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'RedHatText';
+    background-color: hsl(13, 31%, 94%);
+}
+
+.product {
+    height: 200px;
+    width: 230px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+}
+
+.ThreeCard {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.page {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 100vh;
+    margin-top: 40px;
+}
+
+.Panier {
+ background-color: #fff;
+ background-image: url(/assets/images/illustration-empty-cart.svg);
+ background-repeat: no-repeat;
+ background-position: center;
+ background-size: 100px;
+ height: 210px;
+ width: 330px;
+ padding: 20px;
+ margin-left: 20px;
+}
+
+.Panier h2 {
+    color: hsl(14, 86%, 42%);
+    margin-right: 150px;
+
+  }
+  
+  .Panier p {
+    color: hsl(12, 20%, 44%);
+    display: flex;
+    margin-top: 120px;
+    align-items: center;
+    height: fit-content;
+    justify-content: center;
+  }
+
+  .french {
+    color: hsl(7, 20%, 60%);
+    margin: 30px 0px 5px 0px;
+  }
+
+  .english {
+    color: hsl(14, 65%, 9%);
+    font-weight: 600;
+    margin: 0px 0px;
+  }
+
+  .price {
+    color: hsl(14, 86%, 42%);
+    font-weight: 600;
+    margin: 5px 0px 20px 0px;
+  }
+
+  .btnAdd {
+    border-radius: 50px;
+    width: 150px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border: 1px solid #000;
+    position: absolute;
+    top: 90%;
+    background-color: #fff;
+  }
+
+  .svg {
+    height:20px; 
+    width:20px;
+  }
+
+  .buttonAdd {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
