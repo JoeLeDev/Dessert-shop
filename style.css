@@ -1,120 +1,240 @@
 @font-face {
-    font-family: "RedHatText";
-    src: url("/assets/fonts/static/RedHatText-Regular.ttf");
-    font-weight: 400;
+  font-family: "RedHatText";
+  src: url("/assets/fonts/static/RedHatText-Regular.ttf");
+  font-weight: 400;
 }
 
 @font-face {
-    font-family: "RedHatText";
-    src: url("/assets/fonts/static/RedHatText-SemiBold.ttf");
-    font-weight: 600;
+  font-family: "RedHatText";
+  src: url("/assets/fonts/static/RedHatText-SemiBold.ttf");
+  font-weight: 600;
 }
 
 @font-face {
-    font-family: "RedHatText";
-    src: url("/assets/fonts/static/RedHatText-Bold.ttf");
-    font-weight: 700;
+  font-family: "RedHatText";
+  src: url("/assets/fonts/static/RedHatText-Bold.ttf");
+  font-weight: 700;
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    font-family: 'RedHatText';
-    background-color: hsl(13, 31%, 94%);
+  margin: 0;
+  padding: 0;
+  font-family: 'RedHatText';
+  background-color: hsl(13, 31%, 94%);
 }
 
 .product {
-    height: 200px;
-    width: 230px;
+  height: 200px;
+  width: 230px;
+}
+
+.titre {
+  position: relative;
+  left: 9%;
 }
 
 .card {
-    display: flex;
-    flex-direction: column;
-    gap: 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
 }
 
 .ThreeCard {
-    display: flex;
-    flex-direction: row;
-    gap: 50px;
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
 }
 
 .page {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    height: 100vh;
-    margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 100vh;
+  margin-top: 40px;
 }
 
 .Panier {
- background-color: #fff;
- background-image: url(/assets/images/illustration-empty-cart.svg);
- background-repeat: no-repeat;
- background-position: center;
- background-size: 100px;
- height: 210px;
- width: 330px;
- padding: 20px;
- margin-left: 20px;
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100px;
+  height: fit-content;
+  width: 330px;
+  padding: 20px;
+  margin-left: 20px;
 }
 
 .Panier h2 {
-    color: hsl(14, 86%, 42%);
-    margin-right: 150px;
+  color: hsl(14, 86%, 42%);
+  margin-right: 150px;
+}
 
-  }
+.Panier p {
+  color: hsl(12, 20%, 44%);
+  display: flex;
+  align-items: center;
+  height: fit-content;
+  justify-content: center;
+  margin-left: 50px;
+}
+
+.french {
+  color: hsl(7, 20%, 60%);
+  margin: 30px 0px 5px 0px;
+}
+
+.english {
+  color: hsl(14, 65%, 9%);
+  font-weight: 600;
+  margin: 0px 0px;
+}
+
+.price {
+  color: hsl(14, 86%, 42%);
+  font-weight: 600;
+  margin: 5px 0px 20px 0px;
+}
+
+.btnAdd {
+  border-radius: 50px;
+  width: 150px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border: 1px solid #000;
+  position: absolute;
+  top: 90%;
+  background-color: #fff;
+}
+
+.svg {
+  height: 20px;
+  width: 20px;
+}
+
+.buttonAdd {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.added {
+  background-color: hsl(14, 86%, 42%);
+  color: #fff;
+}
+
+.maincard {
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+}
+
+.confirm-order {
+  border-radius: 50px;
+  width: 250px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border: 1px solid #000;
+  background-color: hsl(14, 86%, 42%);
+  color: #fff;
+  display: none;
+  position: relative;
+  left: 10%;
+}
+
+.order-total {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  margin-top: 20px;
+  padding-top: 10px;
+  border-top: 1px solid #ccc;
+  display: none;
+}
+
+.hidden {
+  display: none;
+}
+
+#empty-cart-message {
+  display: block;
+}
+
+.btnQuantity {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: hsl(14, 86%, 42%);
+  color: #fff;
+  border-radius: 50px;
+  width: 150px;
+  height: 40px;
+  position: absolute;
+  top: 90%;
+  border: 1px solid #000;
+}
+
+.btnQuantity button {
+  display: flex;
+  gap: 5px;
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 18px;
+  padding: 0 5px;
+  border: 1px solid #fff;
+  border-radius: 100%;
+
+}
+
+.btnQuantity .quantity {
+  font-size: 18px;
+}
+
+.btnAdd.added {
+  background-color: hsl(14, 86%, 42%);
+  color: #fff;
+}
+
+.btnPlus {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+}
+
+.btnMinus {
+  align-items: flex-end;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+}
+
+#paniervide {
+  position: relative;
+  left: 30%;
+}
+
+.order-total{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  display: none;
   
-  .Panier p {
-    color: hsl(12, 20%, 44%);
-    display: flex;
-    margin-top: 120px;
-    align-items: center;
-    height: fit-content;
-    justify-content: center;
-  }
+}
 
-  .french {
-    color: hsl(7, 20%, 60%);
-    margin: 30px 0px 5px 0px;
-  }
-
-  .english {
-    color: hsl(14, 65%, 9%);
-    font-weight: 600;
-    margin: 0px 0px;
-  }
-
-  .price {
-    color: hsl(14, 86%, 42%);
-    font-weight: 600;
-    margin: 5px 0px 20px 0px;
-  }
-
-  .btnAdd {
-    border-radius: 50px;
-    width: 150px;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    border: 1px solid #000;
-    position: absolute;
-    top: 90%;
-    background-color: #fff;
-  }
-
-  .svg {
-    height:20px; 
-    width:20px;
-  }
-
-  .buttonAdd {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-  }
+.price {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: #000;
+}
