@@ -76,10 +76,23 @@ document.addEventListener('DOMContentLoaded', () => {
         if (productInCart) {
           quantitySpan.textContent = productInCart.quantity;
         } else {
-            button.parentElement.replaceChild(button, quantityContainer);
-            button.textContent = "Add to Cart";
-            button.classList.remove('added');
-            button.classList.add('btnAdd')
+            if (quantityContainer.parentElement) {
+                quantityContainer.parentElement.replaceChild(button, quantityContainer);
+                button.textContent = ''; // Clear text content
+                
+                const icon = document.createElement('img');
+                icon.className = 'svg';
+                icon.src = '/assets/images/icon-add-to-cart.svg';
+                icon.alt = 'Add to Cart Icon';
+      
+                const buttonText = document.createTextNode(' Add to Cart');
+      
+                button.appendChild(icon);
+                button.appendChild(buttonText);
+      
+                button.classList.remove('btnQuantity');
+                button.classList.add('btnAdd');
+              }
         }
         updateCartDisplay();
       });
