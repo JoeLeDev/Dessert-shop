@@ -109,6 +109,11 @@ body {
   background-color: #fff;
 }
 
+.btnAdd:hover {
+  border:1px solid hsl(14, 86%, 42%);
+  color: hsl(14, 86%, 42%);
+}
+
 .svg {
   height: 20px;
   width: 20px;
@@ -155,7 +160,6 @@ body {
   font-weight: bold;
   margin-top: 20px;
   padding-top: 10px;
-  border-top: 1px solid #ccc;
   display: none;
 }
 
@@ -237,4 +241,59 @@ body {
   flex-direction: row;
   justify-content: space-between;
   color: #000;
+}
+
+#cart-total {
+  font-weight: 900;
+  font-size:x-large
+}
+
+#cart-items {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items:flex-start;
+  padding: 0px 20px;
+  gap: 20px;
+
+}
+
+#cart-items li {
+  display: flex;
+  flex-direction: row;
+  margin: 10px 0px;
+  gap: 20px;
+  border-bottom: 1px solid #ccc;
+  padding: 0 10px 50px 0px;
+  width: fit-content;
+}
+
+#cart-items .item-quantity {
+  color: #c73a0f;
+}
+
+.items-price {
+  color:#87635a;
+  position: absolute;
+  margin-left: 98px;
+  margin-top: 11px;
+  }
+
+  .totalprice{
+    color:  #c9aea6;
+    position: absolute;
+    margin-left: 46px;
+    margin-top: 32px;
+    }
+
+
+.item-quantity {
+ position: absolute;
+ padding: 10px 0px;
+}
+
+.delete-button {
+  display: flex;
+  position: absolute;
+  margin-left: 270px;
 }
