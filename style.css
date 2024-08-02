@@ -107,6 +107,7 @@ body {
   position: absolute;
   top: 90%;
   background-color: #fff;
+  cursor: pointer;
 }
 
 .btnAdd:hover {
@@ -175,7 +176,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  background-color: hsl(14, 86%, 42%);
+  background-color: #c73a0f;
   color: #fff;
   border-radius: 50px;
   width: 150px;
@@ -189,18 +190,16 @@ body {
   display: flex;
   gap: 5px;
   background-color: transparent;
-  border: none;
   color: #fff;
-  cursor: pointer;
   font-size: 18px;
   padding: 0 5px;
-  border: 1px solid #fff;
   border-radius: 100%;
-
+  border: 1px solid #fff;
 }
 
+
 .btnQuantity .quantity {
-  font-size: 18px;
+  font-size: 15px;
 }
 
 .btnAdd.added {
@@ -208,20 +207,33 @@ body {
   color: #fff;
 }
 
+.confirm-order:hover {
+  background-color:  hsl(14, 86%, 30%);
+  cursor: pointer;
+}
+
 .btnPlus {
-  display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: center; 
   width: 22px;
   height: 22px;
+  cursor: pointer;
 }
 
 .btnMinus {
-  align-items: flex-end;
-  justify-content: center;
+  align-items: center;
+  justify-content: center; 
   width: 22px;
   height: 22px;
+  cursor: pointer;
+  color: #fff;
 }
+
+
+.btnMinus:hover, .btnPlus:hover {
+  background-color: #fff;
+  color: #c73a0f; }
+
 
 #paniervide {
   position: relative;
@@ -296,4 +308,7 @@ body {
   display: flex;
   position: absolute;
   margin-left: 270px;
+  background: none;
+  border-radius: 11px;
+  cursor: pointer;
 }
